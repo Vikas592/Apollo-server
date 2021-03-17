@@ -1,4 +1,4 @@
-export default {
+export default { // eslint-disable-line
     getMyProfile: () => ({
         id: 1,
         name: 'Vikas',
