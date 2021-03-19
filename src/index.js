@@ -1,6 +1,6 @@
-import configurations from './config/configurations';
-import schema from './modules';
-import Server from './src/server';
+const configurations = require('./config/configurations');
+const schema = require('./modules');
+const Server = require('./server');
 
 const server = new Server(configurations);
 

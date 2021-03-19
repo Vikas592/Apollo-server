@@ -1,3 +1,3 @@
-export {
-    default as Query,
-} from './query';
+const Query = require('./query');
+
+module.exports = { Query };
