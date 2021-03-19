@@ -4,4 +4,5 @@ export default { // eslint-disable-line
         name: 'Vikas',
         email: 'vikas.choubey@successive.tech',
     }),
+
 };
