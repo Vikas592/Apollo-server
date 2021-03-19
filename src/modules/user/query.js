@@ -1,7 +1,6 @@
 module.exports = {
     Query: {
         getMyProfile: () => {
-            console.log('object');
             return {
                 id: 1,
                 name: 'Vikas',
