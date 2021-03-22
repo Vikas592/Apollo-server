@@ -1,3 +1,3 @@
 const Query = require('./query');
 
-module.exports = { Query };
+module.exports = Query;
