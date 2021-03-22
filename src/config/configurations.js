@@ -1,5 +1,7 @@
 require('dotenv').config();
-const Joi = require('joi');
+import * as _Joi from 'joi';
+let Joi = _Joi.default;
+
 
 // define validation for all the env vars
 const envVarsSchema = Joi.object({
@@ -17,4 +19,4 @@ const configurations = Object.freeze({
     port: envVars.PORT,
 });
 
-module.exports = configurations;
+export default configurations;
