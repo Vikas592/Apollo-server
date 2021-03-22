@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     getMyProfile: () => {
         return {
             id: 1,
@@ -6,6 +6,5 @@ module.exports = {
             email: 'vikas.choubey@successive.tech',
         };
     }
-
 };
 

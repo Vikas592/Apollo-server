@@ -1,14 +1,14 @@
-const bodyParser = require('body-parser');
-const compress = require('compression');
-const cors = require('cors');
-const { createServer } = require('http');
+import { json, urlencoded } from 'body-parser';
+import compress from 'compression';
+import cors from 'cors';
+import { createServer } from 'http';
 
-const Express = require('express');
-const helmet = require('helmet');
-const methodOverride = require('method-override');
-const { ApolloServer } = require('apollo-server-express');
+import Express from 'express';
+import helmet from 'helmet';
+import methodOverride from 'method-override';
+import { ApolloServer } from 'apollo-server-express';
 
-module.exports = class Server {
+export default class Server {
     constructor (config) {
         this.config = config;
         this.app = new Express();
@@ -89,8 +89,8 @@ module.exports = class Server {
     * - Parses urlencoded bodies & JSON
     */
     _initJsonParser() {
-        this.app.use(bodyParser.json());
-        this.app.use(bodyParser.urlencoded({ extended: true }));
+        this.app.use(json());
+        this.app.use(urlencoded({ extended: true }));
     }
 
     /**

@@ -1,3 +1,3 @@
-const Query = require('./query');
+import Query from './query';
 
-module.exports = Query;
+export default Query;
